@@ -32,7 +32,7 @@ export default function Register() {
     try {
       const payload = { name, username, email, password };
       const respons = await axios.post(
-        "http://localhost:7000/api/users/register",payload);
+        "https://ecomers-server.onrender.com/api/users/register",payload);
         console.log(respons)
         if (respons.status === 201) {
           toast.success("Registratoin success full")

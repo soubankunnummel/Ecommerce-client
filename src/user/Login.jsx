@@ -25,10 +25,10 @@ export default function Login(props) {
       toast.error("Enter all the inputs");
       return;
     }
-    let url = "http://localhost:7000/api/users/login";
+    let url = "https://ecomers-server.onrender.com/api/users/login";
   
     if (username === adminUserName) {
-      url = "http://localhost:7000/api/admin/login";
+      url = "https://ecomers-server.onrender.com/api/admin/login";
     }
     try {
       const payload = { username, password };
