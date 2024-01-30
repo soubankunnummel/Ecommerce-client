@@ -11,12 +11,10 @@ import {
   MDBBtn,
   MDBCollapse,
 } from 'mdb-react-ui-kit';
-import { Productcontext } from '../../Context';
 import { useNavigate } from 'react-router-dom';
 
 export default function AdmiNav() {
   const  nvigate = useNavigate()
-    const {admin} = useContext(Productcontext)
   const [showBasic, setShowBasic] = useState(false);
   const isAdmin = localStorage.getItem("role")
   return (

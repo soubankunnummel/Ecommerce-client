@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useId, useState } from "react";
+import React, {  useEffect,useState } from "react";
 import './Cart.css'
 import {
   MDBBtn,
@@ -11,7 +11,6 @@ import {
   MDBRow,
   MDBTypography, 
 } from "mdb-react-ui-kit";
-import { Productcontext } from "../Context";
 import { useNavigate, useParams } from "react-router-dom";
 import Navebar from "../componets/Navebar";
 import { Axios } from "../App";

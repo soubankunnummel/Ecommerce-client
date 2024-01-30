@@ -1,5 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Productcontext } from "../../Context";
+import React, {  useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import AdmiNav from "./AdmiNav";
 import { Axios } from "../../App";

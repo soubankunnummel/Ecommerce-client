@@ -1,6 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, {  useEffect, useState } from 'react';
 import { MDBBadge, MDBContainer } from 'mdb-react-ui-kit';
-import { Productcontext } from '../../Context';
 import { useParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
 import { Axios } from '../../App';

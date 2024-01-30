@@ -1,7 +1,5 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import { MDBIcon } from "mdb-react-ui-kit";
-import { useNavigate } from "react-router-dom";
-import { Productcontext } from "../Context";
 import { Axios } from "../App";
 import toast from "react-hot-toast";
 import Navebar from "../componets/Navebar";
@@ -13,8 +11,6 @@ export default function Wishlist() {
    //    fetchWishList(userId,setWishlist)
 
    const [products ,setProducts] = useState([])
-      const navigate = useNavigate();
-   
 
       const fechWishList = async () => {
          try {

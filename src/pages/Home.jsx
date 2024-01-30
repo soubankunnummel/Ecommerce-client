@@ -20,12 +20,12 @@ import { Productcontext } from "../Context";
 
 
 export default function Home() {
-  const {addToWishlist,wishStatus} = useContext(Productcontext)
+  const {addToWishlist} = useContext(Productcontext)
   const navigate = useNavigate();
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]); 
+  // const [cart, setCart] = useState([]); 
   const isUser = localStorage.getItem("userName")
-  const cartCount = localStorage.getItem("count")
+  // const cartCount = localStorage.getItem("count")
 
   const handleViewProduct = (productId) => {
     if (isUser) {

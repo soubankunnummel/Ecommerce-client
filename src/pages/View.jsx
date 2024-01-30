@@ -19,7 +19,7 @@ import toast from "react-hot-toast";
 
 export default function View() {
   const isUser = localStorage.getItem("userName")
-  const {  fetchCartCount , cartCount,addToWishlist} = useContext(Productcontext);
+  const {addToWishlist} = useContext(Productcontext);
   const [product, setProduct] = useState([])
   const { id } = useParams();
   const userId = localStorage.getItem("userId") 

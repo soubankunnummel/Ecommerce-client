@@ -1,9 +1,9 @@
-import { MDBCol } from "mdb-react-ui-kit";
+// import { MDBCol } from "mdb-react-ui-kit";
 import React from "react";
 import "./Banner.css";
-import Carousel from "react-multi-carousel"; 
+// import Carousel from "react-multi-carousel"; 
 import "react-multi-carousel/lib/styles.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import BanSecBtns from "./BanerItems/BanSecBtns";
 import BanImage from "./BanerItems/BanImage";
 import BanCorse1 from "./BanerItems/BanCorse1";
@@ -12,7 +12,6 @@ import BanCorse1 from "./BanerItems/BanCorse1";
 
 export default function Banner() {
   
-  const navigator = useNavigate();
  
   
   return (

@@ -82,17 +82,16 @@ function App() {
   const [wishLit ,setWishlist] = useState([])
   const [wishStatus, setWishStatus] = useState(false)
   const count  = cartCount.length
-  console.log(count)
+  
   // wishList fetching
 
   const fetchWishList = () => {
 
-    useEffect(() => {
-  
-      const fetchData = async () => {
-        try {
-          const response = await Axios.get(`/api/users/${userId}/wishlist`)
-          if(response.status === 200){
+    
+    const fetchData = async () => {
+      try {
+        const response = await Axios.get(`/api/users/${userId}/wishlist`)
+        if(response.status === 200){
             setWishlist(response.data.data)
             setWishStatus(true)
           }
@@ -101,10 +100,15 @@ function App() {
           console.log(error)
           
         }
+        
+
       }
-      fetchData()
-    },[])
-  }
+      return fetchData()
+    }
+
+    useEffect(() => {
+    fetchWishList()
+  },[])
 
   // add to wishlit
 

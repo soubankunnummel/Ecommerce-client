@@ -21,7 +21,7 @@ export default function Bedroom() {
   const handleViewProduct = (productId) => {
     navigat(`/View/${productId}`);
   };
-  const { BedroomProductss, serchTerm, cart } = useContext(Productcontext);
+  const {  cart } = useContext(Productcontext);
   const [product,setProduct] = useState([])
   console.log(product)
   useEffect(() => {

@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Axios } from "../App";
 import toast from "react-hot-toast";
 
 export default function SuccessPayment() {
    const navigate = useNavigate();
-   const [payment, setPayment] = useState([])
+   // const [payment, setPayment] = useState([])
 
    useEffect(() => {
     let isSuccess = true
@@ -29,7 +29,7 @@ export default function SuccessPayment() {
       }
 
      
-   }, []);
+   }, [navigate]);
 
    return (
       <div className="payment-success d-flex justify-content-md-center">

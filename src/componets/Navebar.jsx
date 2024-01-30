@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useId, useState } from "react";
+import React, { useContext, useEffect,  useState } from "react";
 import {
   MDBContainer,
   MDBNavbar,
@@ -15,7 +15,7 @@ import {
   MDBCollapse,
 } from "mdb-react-ui-kit"; 
 // import { Products } from "./Products";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Navebar.css";
 import { Productcontext } from "../Context";
 import { Axios } from "../App";

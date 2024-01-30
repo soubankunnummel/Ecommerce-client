@@ -1,4 +1,3 @@
-import React, { useContext, useState } from "react";
 import './Login.css'
 import {
   MDBBtn,
@@ -9,7 +8,6 @@ import {
 
 } from "mdb-react-ui-kit";
 import {  useNavigate } from "react-router-dom";
-import { Productcontext } from "../Context";
 import axios from "axios"
 import toast from 'react-hot-toast'
 
@@ -17,7 +15,6 @@ import toast from 'react-hot-toast'
 export default function Login(props) { 
 
   const navigate = useNavigate();
-  const {  setUerName} = useContext(Productcontext);
   const handlLogin = async (e) => {
     e.preventDefault();
     const username = e.target.username.value.trim().toLowerCase();

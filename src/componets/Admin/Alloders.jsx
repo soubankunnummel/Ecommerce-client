@@ -1,12 +1,10 @@
 // AllOrders.js
-import React, { useContext, useEffect, useState } from 'react';
-import { Productcontext } from '../../Context';
+import React, {   useEffect, useState } from 'react';
 import AdmiNav from './AdmiNav';
 import { Axios } from '../../App';
 
 
 export default function Alloders() {
-    const {login} = useContext(Productcontext)
     const [data, setData] = useState([])
     console.log(data)
     useEffect(() => {
