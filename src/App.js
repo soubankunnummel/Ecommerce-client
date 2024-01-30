@@ -97,7 +97,7 @@ function App() {
           }
           
         } catch (error) {
-          console.log(error)
+          // console.log(error)
           
         }
         
@@ -130,23 +130,26 @@ function App() {
   // fetching cart producnts 
 
   const fetchCartCount = async () => {
-    useEffect(() => {
-      const fetchDatas = async () => {
-        try {
-              const response = await Axios.get(`/api/users/${userId}/cart`)
-              if(response.status === 200){
-                setCartCount(response.data.data)
-              }
-            } catch (error) {
-              console.log(error)
-              
-            }
+    const fetchDatas = async () => {
+      try {
+        const response = await Axios.get(`/api/users/${userId}/cart`)
+        if(response.status === 200){
+          setCartCount(response.data.data)
+        }
+      } catch (error) {
+        console.log(error)
+        
       }
-      fetchDatas()
-    },[])
+    }
+    return fetchDatas()
   }
+  useEffect(() => {
+    fetchCartCount()
+  },[])
  
-  useEffect(() => {Axios},[Axios])
+  useEffect(() => {
+  return  Axios
+  },[Axios])
 
   return (
     <>

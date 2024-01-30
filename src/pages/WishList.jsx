@@ -15,7 +15,7 @@ export default function Wishlist() {
       const fechWishList = async () => {
          try {
             const  response = await Axios.get(`/api/users/${userId}/wishlists`)
-            console.log(response)
+            // console.log(response)
             if(response.status === 200) {
                 setProducts(response.data.data)
             }
